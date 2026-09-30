@@ -10,7 +10,7 @@
 
 # Installation
 
-- `npm i ecjsonstorage -S` to install the module, which is then both available as CommonJs and ESM version.
+- `npm i @neonwilderness/ecjsonstorage -S` to install the module, which is then both available as CommonJs and ESM version.
 
 - Create an .env file in your project directory root and add the following keys:
 
@@ -27,7 +27,7 @@
  ## Constructor
 
  ```
- import { ECJsonStorage } from 'ecjsonstorage';
+ import { ECJsonStorage } from '@neonwilderness/ecjsonstorage';
  import { config } from 'dotenv-safe';
  config();
 
@@ -35,7 +35,7 @@
  ...
  ```
 
- ## Create a bin
+ ## Create a new bin
 
   `createBin(payload: object, keepPrivate: boolean)`
 
@@ -46,4 +46,4 @@
   console.log(res);
  ```
 
-Further Documentation/Usage details will follow swiftly; for now you may wanna consult the [TS types file](dist/index.d.cts).
+Further Documentation/Usage details will follow swiftly; for now you may wanna consult the [TS types file](dist/index.d.ts).

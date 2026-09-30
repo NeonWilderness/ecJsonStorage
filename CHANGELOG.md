@@ -14,3 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.2] - 2026-09-30
 - Also generate types for ESM version
 - Fix exports import|require in package.json
+
+## [1.0.3] - 2026-09-30
+- Change package name to @neonwilderness/ecjsonstorage
+- Adapt installation 
