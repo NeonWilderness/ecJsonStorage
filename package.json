@@ -1,15 +1,25 @@
 {
   "name": "@neonwilderness/ecjsonstorage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "./dist/index.cjs",
-  "exports": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.cts",
+  "exports":  {
+    "import": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "require": {
+      "types": "./dist/index.d.cts",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
     "update": "ncu -u -x typescript && npm i",
     "build": "npm run build:js && npm run build:dts",
     "build:js": "tsup src/*.ts --format esm,cjs --minify",
-    "build:dts": "tsup src/index.ts --dts-only",
+    "build:dts": "tsup src/index.ts --format esm,cjs --dts-only",
     "deleteAllBins": "node dist/deleteAllBins.cjs",
     "test": "vitest"
   },
