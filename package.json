@@ -1,10 +1,12 @@
 {
   "name": "ecjsonstorage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.ts",
+  "main": "./dist/index.cjs",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.cts",
   "scripts": {
-    "update": "ncu -u -x typescript && npm -i",
+    "update": "ncu -u -x typescript && npm i",
     "build": "npm run build:js && npm run build:dts",
     "build:js": "tsup src/*.ts --format esm,cjs --minify",
     "build:dts": "tsup src/index.ts --dts-only",
@@ -32,9 +34,9 @@
     "dotenv-safe": "^9.1.0",
     "tsup": "^8.5.1",
     "typescript": "^6.0.3",
-    "vitest": "^5.0.2"
+    "vitest": "^5.0.3"
   },
   "allowScripts": {
-    "esbuild@0.27.2": true
+    "esbuild@0.28.2": true
   }
 }
