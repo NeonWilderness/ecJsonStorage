@@ -200,6 +200,7 @@ export class ECJsonStorage {
    */
   updateBin = async (payload: object, bin: string): Promise<resUpdateBin | resError> => {
     try {
+      if (!bin) throw new Error('Bin ID missing!');
       const response = await fetch(`${this.url}/${bin}`, {
         method: 'PUT',
         headers: {
@@ -235,6 +236,7 @@ export class ECJsonStorage {
    */
   patchBin = async (payload: object, bin: string): Promise<resPatchBin | resError> => {
     try {
+      if (!bin) throw new Error('Bin ID missing!');
       const response = await fetch(`${this.url}/${bin}`, {
         method: 'PATCH',
         headers: {
@@ -268,6 +270,7 @@ export class ECJsonStorage {
    */
   deleteBin = async (bin: string): Promise<resDeleteBin | resError> => {
     try {
+      if (!bin) throw new Error('Bin ID missing!');
       const response = await fetch(`${this.url}/${bin}`, {
         method: 'DELETE',
         headers: {
