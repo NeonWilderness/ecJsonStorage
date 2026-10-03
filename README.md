@@ -76,7 +76,7 @@ console.log(res);
 
 ### getBins(): Promise<resGetBins | resError>
 
-This function returns all bins that have been created (and still exist) for the given Api-key. It also returns the current quota limit, i.e. number of calls made and number of ramaining calls (Limit is 10.000 calls per month).
+This function returns all bins that have been created (and still exist) for the given Api-key. It also returns the current quota limit, i.e. number of calls made and number of remaining calls (Limit is 10.000 calls per month).
 
 resGetBins Property | Type | Text
 --- | --- | --- 
