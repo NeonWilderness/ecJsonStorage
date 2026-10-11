@@ -21,7 +21,7 @@ test('Fixes an alternative Api URL if it has ending slash/es', () => {
   expect(json.url).toBe('https://other.com/api');
 });
 
-test.only('Can construct a valid class', () => {
+test('Can construct a valid class', () => {
   const json = new ECJsonStorage(process.env.JSONAPI!, process.env.JSONSEC!);
   expect(json.url).toBe('https://json.extendsclass.com/bin');
   expect(json.apiKey).toBe(process.env.JSONAPI);
@@ -37,7 +37,7 @@ test('Can overwrite the API url if needed', () => {
   expect(json.monthlyLimit).toBe(10000);
 });
 
-test('Can get all bins of an API Key', async () => {
+test.only('Can get all bins of an API Key', async () => {
   const json = new ECJsonStorage(process.env.JSONAPI!, process.env.JSONSEC!);
   const res = await json.getBins();
   console.log(res);
