@@ -84,4 +84,5 @@ declare class ECJsonStorage {
     deleteBin: (bin: string) => Promise<resDeleteBin | resError>;
 }
 
-export { ECJsonStorage, type resCreateBin, type resDeleteBin, type resError, type resGetBin, type resGetBins, type resGetStats, type resPatchBin, type resUpdateBin };
+export { ECJsonStorage };
+export type { resCreateBin, resDeleteBin, resError, resGetBin, resGetBins, resGetStats, resPatchBin, resUpdateBin };

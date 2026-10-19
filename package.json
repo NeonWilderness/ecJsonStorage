@@ -1,6 +1,6 @@
 {
   "name": "@neonwilderness/ecjsonstorage",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "TS/JS wrapper to the ExtendsClass JSON Storage API",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -40,11 +40,11 @@
   "devDependencies": {
     "@types/dotenv-safe": "^9.1.0",
     "@types/node": "^26.6.5",
-    "dotenv": "^18.0.7",
+    "dotenv": "^18.0.8",
     "dotenv-safe": "^9.1.0",
-    "tsup": "^8.5.1",
+    "tsup": "^9.0.0",
     "typescript": "^6.0.3",
-    "vitest": "^5.0.3"
+    "vitest": "^5.0.5"
   },
   "allowScripts": {
     "esbuild@0.28.2": true,
